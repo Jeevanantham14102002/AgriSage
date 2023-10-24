@@ -1,0 +1,70 @@
+.card{
+    padding: 10px;
+    border:0px;
+  
+}
+.card-title{
+    padding: 25px;
+    font-size: 25px;
+    
+}
+
+.card1{
+    background-image: url("https://media.istockphoto.com/id/175427437/photo/high-resolution-light-colored-bamboo-background.jpg?s=612x612&w=0&k=20&c=RKQVFpGt8zwzi9lrqEEK3XXcjcBW9z6WgRHDfmzy2aw=");
+    padding:10px;
+    border-radius: 10px;
+    background-repeat:none;
+    background-size: cover;
+    box-shadow: 10px 10px 16px rgb(139, 139, 139);
+    backdrop-filter: blur(5px);
+}
+.card2{
+    background-image: url("https://media.istockphoto.com/id/175427437/photo/high-resolution-light-colored-bamboo-background.jpg?s=612x612&w=0&k=20&c=RKQVFpGt8zwzi9lrqEEK3XXcjcBW9z6WgRHDfmzy2aw=");
+    padding:10px;
+    border-radius: 10px;
+    background-repeat:none;
+    background-size: cover;
+    box-shadow: 10px 10px 16px rgba(139, 139, 139);
+}
+.card3{
+    background-image: url("https://media.istockphoto.com/id/175427437/photo/high-resolution-light-colored-bamboo-background.jpg?s=612x612&w=0&k=20&c=RKQVFpGt8zwzi9lrqEEK3XXcjcBW9z6WgRHDfmzy2aw=");
+    padding:10px;
+    border-radius: 10px;
+    background-repeat:none;
+    background-size: cover;
+    box-shadow: 10px 10px 16px rgba(139, 139, 139);
+    
+}
+.btn-primary {
+    box-shadow: 5px 5px 15px rgb(56, 56, 56);
+
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #605b4a;
+    --bs-btn-border-color: #c27304;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #0b5ed7;
+    --bs-btn-hover-border-color: #0a58ca;
+    --bs-btn-focus-shadow-rgb: 49,132,253;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #0a58ca;
+    --bs-btn-active-border-color: #0a53be;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #0d6efd;
+    --bs-btn-disabled-border-color: #0d6efd;
+}
+body {
+    margin: 0;
+    font-family: var(--bs-body-font-family);
+    font-size: var(--bs-body-font-size);
+    font-weight: var(--bs-body-font-weight);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    text-align: var(--bs-body-text-align);
+    
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+.wapper{
+    background:white;
+}

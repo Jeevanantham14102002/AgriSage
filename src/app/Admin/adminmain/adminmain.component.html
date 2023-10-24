@@ -1,0 +1,122 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="#">AgriSage</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+		<ul class="navbar-nav ml-auto"> <!-- Add ml-auto class here -->
+		  <li class="nav-item">
+			<a class="nav-link active" aria-current="page" href="#">Home</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Manage Users</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" href="#">Upload</a>
+		  </li>
+		  <li class="nav-item dropdown">
+			<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i>
+			  Profile
+			</a>
+			<ul class="dropdown-menu">
+			  <li><a class="dropdown-item" href="#">Action</a></li>
+			  <li><a class="dropdown-item" href="#">Another action</a></li>
+			  <li><a class="dropdown-item" href="#">Something else here</a></li>
+			</ul>
+		  </li>
+		</ul>
+	  </div>
+	</div>
+  </nav>
+  <div class="row">
+	<div class="col-sm-6 mb-3 mb-sm-0">
+	  <div class="card">
+		<div class="card-body">
+	
+			<div class="skill">
+				<div class="outer">
+					<div class="inner">
+						<div id="number">
+							65%
+						</div>
+					</div>
+				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+					<defs>
+						<linearGradient id="GradientColor">
+							<stop offset="0%" stop-color="#e91e63" />
+							<stop offset="100%" stop-color="#673ab7" />
+						</linearGradient>
+					</defs>
+					<circle cx="80" cy="80" r="70" stroke-linecap="round"/>
+				</svg>
+			</div>
+			<script>
+				let number=document.getElementById("number");
+				let counter=0;
+				setInterval(()=>{
+					if (counter==65){
+						clearInterval();
+					}
+					else{
+						counter+=1;
+						number.innerHTML=counter+"%";
+					}
+					
+				}, 30);
+			</script>
+			
+		</div>
+		<h3>No.of Vegs arrived</h3>
+	  </div>
+	</div>
+	<div class="col-sm-6">
+	  <div class="card">
+		<div class="card-body">
+			<div class="skill">
+				<div class="outer">
+					<div class="inner">
+						<div id="number1">
+							65%
+						</div>
+					</div>
+				</div>
+				<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
+					<defs>
+						<linearGradient id="GradientColor">
+							<stop offset="0%" stop-color="#e91e63" />
+							<stop offset="100%" stop-color="#673ab7" />
+						</linearGradient>
+					</defs>
+					<circle cx="80" cy="80" r="70" stroke-linecap="round"/>
+				</svg>
+			</div>
+			<script>
+				let number1=document.getElementById("number1");
+				let counter1=0;
+				setInterval(()=>{
+					if (counter1==65){
+						clearInterval();
+					}
+					else{
+						counter1+=1;
+						number1.innerHTML=counter1+"%";
+					}
+					
+				}, 30);
+			</script>
+		</div>
+		<h3>No.of Vegs Sold Yesterday</h3>
+	  
+	</div>
+  </div>
+  <div class ="card1">
+  <div class="card1 w-50">
+	<div class="card1-body">
+	  <div class="graph">
+		<img src="https://media.istockphoto.com/id/513652829/photo/candlestick-pattern.jpg?s=612x612&w=0&k=20&c=0tGMrBevj867chjSY0r4LC_zmzHtap846Fr8gOLrS7Q=" width="500px" height="250px">
+	  </div>
+	</div>
+  </div>
+  </div>

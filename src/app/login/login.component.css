@@ -1,0 +1,102 @@
+.card-container {
+    min-height: 100vh;
+    padding: 20px 200px;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* To center vertically */
+    /* border: 2px solid #ccc; */
+    /* padding:5px 0px; */
+    /* padding: 20px; Add padding for spacing */
+    background-image: url("https://ec.europa.eu/social/BlobServlet?mode=displayPicture&photoId=12224");
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-size: cover; /* Cover the entire container */
+    /* background-attachment: fixed;Fixed background */
+  }
+  
+  .card {
+    /* width: 18rem; */
+    /* Add any other styles you want for the card here */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    border-radius: 10px;
+    background-size: cover;
+    max-width: 30rem;
+    backdrop-filter: blur(1px); /* Add blur effect */
+    background-color: rgba(251, 255, 241, 0.5);
+    border-radius: 15px;
+    padding-bottom: 20px;
+    padding:20px 20px;
+    border-width: 3px;
+     /* Add a 2px solid border with color #333 */
+    /* ... your existing styles ... */
+    box-shadow: 6px 6px 6px rgba(49, 49, 49, 0.956);
+  }
+  .card-text{
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .card-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-family: Harlow Solid Italic;
+  }
+ 
+  
+  /* Style the buttons */
+  .btn-primary,
+  .btn-secondary {
+    margin-top: 10px; /* Add spacing between buttons */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Add a subtle shadow effect */
+    
+}
+  
+  /* Add hover effect to buttons */
+  .loginsignupbutton{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+    
+    
+  }
+  .loginsignupbutton button{
+    margin-right: 10px;
+    margin-left: 10px;
+    border:px;
+    background-color: #bdf1ff;
+    color: #000000;
+    padding:6px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-family: Sitka Small Semibold;
+    border-color:white;
+    border-width: 4px;
+
+    
+  }
+  .loginsignupbutton button:hover{
+    background-color: rgb(251, 231, 157);;
+  }
+  .card-text {
+    text-align: center; /* Center the text horizontally */
+    display: flex;
+    justify-content: center; /* Center the content vertically */
+    align-items: center;
+    height: 100%; /* Ensure content takes up the full height */
+    margin: 0; /* Reset margin to remove any default spacing */
+    padding: 10px; /* Add padding for spacing around the content */
+  }
+  
+  /* Add responsiveness using media queries */
+  @media (max-width: 768px) {
+    .card-text {
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+  
