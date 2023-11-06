@@ -16,7 +16,7 @@
     min-height: 100vh;
 }
 .side-image{
-    background-image: url("https://m.media-amazon.com/images/I/71+17bVYHxL._AC_UF1000,1000_QL80_.jpg");
+    background-image: url("../assets/loginasuser.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

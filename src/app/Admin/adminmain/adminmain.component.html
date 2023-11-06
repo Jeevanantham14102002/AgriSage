@@ -111,12 +111,17 @@
 	  
 	</div>
   </div>
-  <div class ="card1">
-  <div class="card1 w-50">
-	<div class="card1-body">
-	  <div class="graph">
-		<img src="https://media.istockphoto.com/id/513652829/photo/candlestick-pattern.jpg?s=612x612&w=0&k=20&c=0tGMrBevj867chjSY0r4LC_zmzHtap846Fr8gOLrS7Q=" width="500px" height="250px">
-	  </div>
+  <div class="col-sm-6">
+		
+	<div class="card">
+		
+		<div class="chartjs-wrapper-demo">
+		  <apx-chart [series]="RandomData.series"  [colors]="RandomData.colors" [chart]="RandomData.chart" [annotations]="RandomData.annotations" [dataLabels]="RandomData.dataLabels" [markers]="RandomData.markers" [xaxis]="RandomData.xaxis"
+		  [tooltip]="RandomData.tooltip" [fill]="RandomData.fill">
+		  </apx-chart>
+		</div>
 	</div>
-  </div>
-  </div>
+	</div>
+
+</div>
+  

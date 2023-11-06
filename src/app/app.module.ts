@@ -9,9 +9,8 @@ import { SignuppageComponent } from './signuppage/signuppage.component';
 import { LoginforpageComponent } from './loginforpage/loginforpage.component';
 import { LoginasfarmerComponent } from './loginasfarmer/loginasfarmer.component';
 import { LoginasuserComponent } from './loginasuser/loginasuser.component';
-import { AdminmainComponent } from './Admin/adminmain/adminmain.component';
 import { LoginasadminComponent } from './loginasadmin/loginasadmin.component';
-
+import { AdminModule } from './Admin/admin.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +26,9 @@ import { LoginasadminComponent } from './loginasadmin/loginasadmin.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AdminModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
