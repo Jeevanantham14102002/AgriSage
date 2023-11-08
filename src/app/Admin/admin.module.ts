@@ -4,10 +4,12 @@ import { NgxEchartsModule } from 'ngx-echarts';
 import { NgApexchartsModule } from 'ng-apexcharts';
 import { NgChartsModule } from 'ng2-charts';
 import { AdminmainComponent } from './adminmain/adminmain.component';
+import { StatisticsComponent } from './statistics/statistics.component';
 
 @NgModule({
   declarations: [
-    AdminmainComponent
+    AdminmainComponent,
+    StatisticsComponent
 
   ],
   imports: [

@@ -1,0 +1,48 @@
+.navbar-nav{
+	padding-left: 250px;
+}
+.nav-item{
+	padding-left:50px;
+
+}
+.navbar-brand{
+	padding-left: 20px;
+}
+.row{
+    padding:50px;
+}
+.card{
+    border-width: 1px;
+}
+
+
+    
+   
+.linebreak{
+    margin-top: 0;
+    width:100%;
+    padding-bottom: 25px;
+}
+
+.card-container{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.row{
+    padding-top: 0px;
+    padding-bottom: 50px;
+    /* padding-right: 50px;
+    padding-left: 50px; */
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Additional horizontal centering for text */
+  }
+.card{
+    min-width:400px;
+    min-height: 250px;
+}  

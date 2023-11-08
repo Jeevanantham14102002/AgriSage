@@ -9,6 +9,8 @@ import { LoginasfarmerComponent } from './loginasfarmer/loginasfarmer.component'
 import { AdminmainComponent } from './Admin/adminmain/adminmain.component';
 import { LoginasadminComponent } from './loginasadmin/loginasadmin.component';
 
+import { StatisticsComponent } from './Admin/statistics/statistics.component';
+
 
 const routes: Routes = [
   {
@@ -34,7 +36,20 @@ const routes: Routes = [
 ,
 {
   path:'loginasadmin',component:LoginasadminComponent
+},
+{
+  path:'statistics',component:StatisticsComponent
 }
+
+// {
+//   path: 'Admin', 
+//   children: [
+//     {
+//       path:'statistics',component:StatisticsComponent
+//     },
+  
+//   ],
+// }
 ];
 
 @NgModule({

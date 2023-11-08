@@ -19,7 +19,6 @@ import { AdminModule } from './Admin/admin.module';
     SignuppageComponent,
     LoginforpageComponent,
     LoginasfarmerComponent,
-    // LoginasadminComponent,
     LoginasuserComponent,
     LoginasadminComponent,
     
