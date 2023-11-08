@@ -6,10 +6,9 @@ import { SignuppageComponent } from './signuppage/signuppage.component';
 import { LoginforpageComponent } from './loginforpage/loginforpage.component';
 import { LoginasuserComponent } from './loginasuser/loginasuser.component';
 import { LoginasfarmerComponent } from './loginasfarmer/loginasfarmer.component';
-import { AdminmainComponent } from './Admin/adminmain/adminmain.component';
 import { LoginasadminComponent } from './loginasadmin/loginasadmin.component';
 
-import { StatisticsComponent } from './Admin/statistics/statistics.component';
+
 
 
 const routes: Routes = [
@@ -18,6 +17,9 @@ const routes: Routes = [
   },
 {
   path:'loginforpage', component:LoginforpageComponent
+},
+{
+  path:'admin', loadChildren: ()=> import('./Admin/admin.module').then(m => m.AdminModule),
 },
 {
   path:'signuppage',component:SignuppageComponent
@@ -30,26 +32,13 @@ const routes: Routes = [
   path:'loginasfarmer',component:LoginasfarmerComponent
 }
 ,
-{
-  path:'adminmain',component:AdminmainComponent
-}
-,
+
 {
   path:'loginasadmin',component:LoginasadminComponent
 },
-{
-  path:'statistics',component:StatisticsComponent
-}
 
-// {
-//   path: 'Admin', 
-//   children: [
-//     {
-//       path:'statistics',component:StatisticsComponent
-//     },
-  
-//   ],
-// }
+
+
 ];
 
 @NgModule({
