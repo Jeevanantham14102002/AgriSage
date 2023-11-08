@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Component } from '@angular/core';
+// import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import * as chartData from '../../chart/apex'
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 @Component({
   selector: 'app-statistics',
@@ -7,9 +10,14 @@ import { Router } from '@angular/router';
   styleUrls: ['./statistics.component.css']
 })
 export class StatisticsComponent {
-  constructor(private router: Router) { }
+  constructor() { }
 
-  navigateToAdmin() {
-    this.router.navigate(['admin']); // Navigate to the "Admin" page
+  ngOnInit(): void {
   }
+
+  public RandomData = chartData.ApexRandomData;
+  public apexData = chartData.ApexChartData1;
+ 
+
+
 }
