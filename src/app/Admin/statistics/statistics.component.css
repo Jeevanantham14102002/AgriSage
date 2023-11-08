@@ -30,6 +30,8 @@
     justify-content: center;
 }
 .row{
+    padding-left: 100px;
+    padding-right: 100px;
     padding-top: 0px;
     padding-bottom: 50px;
     /* padding-right: 50px;
@@ -43,6 +45,15 @@
     text-align: center; /* Additional horizontal centering for text */
   }
 .card{
-    min-width:400px;
+    
+    min-width:300px;
     min-height: 250px;
 }  
+.stylish-text {
+    font-weight: bold;
+    font-family: 'Your Stylish Font', sans-serif; /* Replace 'Your Stylish Font' with the desired font family */
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #090909; /* Change the text color to your preference */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Apply a text shadow for a stylish effect */
+    /* Additional styling properties can be added as needed */
+  }
