@@ -1,0 +1,38 @@
+<div>
+  <label for="districtDropdown">Select District:</label>
+  <select id="districtDropdown" [(ngModel)]="selectedDistrict" (change)="onDistrictChange()">
+    <option *ngFor="let district of districts" [value]="district">{{ district }}</option>
+  </select>
+</div>
+
+
+<ng-container *ngIf="sdOptions.series[0].data && sdOptions.xaxis.categories && fdOptions.series[0].data && fdOptions.xaxis.categories">
+
+  <div class="card-graph1">
+    <div class="chartjs-wrapper-demo">
+      <apx-chart [series]="sdOptions.series" [colors]="sdOptions.colors" [chart]="sdOptions.chart" 
+                 [annotations]="sdOptions.annotations" [dataLabels]="sdOptions.dataLabels" 
+                 [markers]="sdOptions.markers" [xaxis]="sdOptions.xaxis" [tooltip]="sdOptions.tooltip" 
+                 [fill]="sdOptions.fill">
+      </apx-chart>
+    </div>
+  </div>
+  
+  <div class="card-graph1">
+    <div class="chartjs-wrapper-demo">
+      <apx-chart [series]="fdOptions.series" [colors]="fdOptions.colors" [chart]="fdOptions.chart" 
+                 [annotations]="fdOptions.annotations" [dataLabels]="fdOptions.dataLabels" 
+                 [markers]="fdOptions.markers" [xaxis]="fdOptions.xaxis" [tooltip]="fdOptions.tooltip" 
+                 [fill]="fdOptions.fill"  >
+      </apx-chart>
+    </div>
+  </div>
+</ng-container>
+
+
+
+
+
+
+
+

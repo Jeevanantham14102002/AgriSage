@@ -7,7 +7,7 @@ import { LoginforpageComponent } from './loginforpage/loginforpage.component';
 import { LoginasuserComponent } from './loginasuser/loginasuser.component';
 import { LoginasfarmerComponent } from './loginasfarmer/loginasfarmer.component';
 import { LoginasadminComponent } from './loginasadmin/loginasadmin.component';
-
+import { MarketPricesComponent } from './crops/market-prices/market-prices.component';
 
 
 
@@ -21,6 +21,10 @@ const routes: Routes = [
 {
   path:'admin', loadChildren: ()=> import('./Admin/admin.module').then(m => m.AdminModule),
 },
+{
+  path:'crops', loadChildren: ()=> import('./crops/crops.module').then(m => m.CropsModule),
+},
+{ path: 'market-price/:cropName', component: MarketPricesComponent },
 {
   path:'signuppage',component:SignuppageComponent
 },

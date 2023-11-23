@@ -1,4 +1,99 @@
+export let ApexSyntheticData: any = {
+    series: [{
+      name: 'Previous Prices',
+      data: [],  // We'll fill this with fetched data
+    }],
+    chart: {
+      id: 'previous-data',
+      type: 'line',
+      colors: ['#4454c3'],
+      height: 400,
+      zoom: {
+        autoScaleYaxis: false
+      },
+      toolbar: {
+        show: false  // Hide toolbar to make it a clean line chart
+      }
 
+    },
+    dataLabels: {
+      enabled: false
+    },
+    stroke: {
+        curve: 'smooth',
+        width: 2,
+        colors: ['#4454c3']  // Set line color
+      },
+      
+    markers: {
+      size: 0,  // Set marker size to 0 to hide markers
+    },
+    xaxis: {
+      type: 'datetime',
+      tickAmount: 6,
+    },
+    yaxis: {
+      show: false
+    },
+    tooltip: {
+      x: {
+        format: 'dd MMM yyyy'
+      }
+    },
+    grid: {
+      show: false
+    },
+    colors: ['#4454c3'],  // Set line color
+  };
+  
+  export let ApexFinalPriceData: any = {
+    series: [{
+      name: 'Future Prices',
+      data: [],
+    }],
+    chart: {
+      id: 'future-price-chart',
+      type: 'line',
+      colors: ['#ff9900'],
+      height: 400,
+      zoom: {
+        autoScaleYaxis: false
+      },
+      toolbar: {
+        show: false  // Hide toolbar to make it a clean line chart
+      }
+    },
+    dataLabels: {
+      enabled: false
+    },
+    stroke: {
+        curve: 'smooth',
+        width: 2,
+        colors: ['#ff9900']  // Set line color
+      },
+      
+    markers: {
+      size: 0,  // Set marker size to 0 to hide markers
+    },
+    xaxis: {
+      type: 'datetime',
+      tickAmount: 6,
+    },
+    yaxis: {
+      show: false
+    },
+    tooltip: {
+      x: {
+        format: 'dd MMM yyyy'
+      }
+    },
+    grid: {
+      show: false
+    },
+    colors: ['#ff9900'],  // Set line color
+  };
+  
+  
 
 export let ApexRandomData : any = {
   series: [{
@@ -316,7 +411,7 @@ export let ApexRandomData : any = {
   },
 }
 
-export let ApexChartData  : any = {
+export let ApexChartData : any = {
   series: [{
       name: 'New Customers',
       data: [31, 40, 78, 51, 92, 65, 90]

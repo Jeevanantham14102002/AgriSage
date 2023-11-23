@@ -11,6 +11,7 @@ import { LoginasfarmerComponent } from './loginasfarmer/loginasfarmer.component'
 import { LoginasuserComponent } from './loginasuser/loginasuser.component';
 import { LoginasadminComponent } from './loginasadmin/loginasadmin.component';
 import { AdminModule } from './Admin/admin.module';
+import { CropsModule } from './crops/crops.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,8 @@ import { AdminModule } from './Admin/admin.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    CropsModule
     
   ],
   providers: [],
