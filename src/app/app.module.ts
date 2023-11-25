@@ -13,7 +13,7 @@ import { AdminModule } from './Admin/admin.module';
 import { SignupasfarmerComponent } from './signupasfarmer/signupasfarmer.component';
 import { SignupasuserComponent } from './signupasuser/signupasuser.component';
 import { SignupasadminComponent } from './signupasadmin/signupasadmin.component';
-
+import { FormsModule } from '@angular/forms';
 import { CropsModule } from './crops/crops.module';
 @NgModule({
   declarations: [
@@ -34,7 +34,8 @@ import { CropsModule } from './crops/crops.module';
     BrowserModule,
     AppRoutingModule,
     AdminModule,
-    CropsModule
+    CropsModule,
+    FormsModule
     
   ],
   providers: [],
