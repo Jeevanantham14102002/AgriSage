@@ -9,6 +9,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
   templateUrl: './statistics.component.html',
   styleUrls: ['./statistics.component.css']
 })
+
 export class StatisticsComponent {
   constructor() { }
 

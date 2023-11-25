@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { NgxEchartsModule } from 'ngx-echarts';
 import { NgApexchartsModule } from 'ng-apexcharts';
@@ -12,7 +12,7 @@ import { CropinvoiceComponent } from './cropinvoice/cropinvoice.component';
   declarations: [
     AdminmainComponent,
     StatisticsComponent,
-    CropinvoiceComponent
+    CropinvoiceComponent,
 
   ],
   imports: [
@@ -20,10 +20,12 @@ import { CropinvoiceComponent } from './cropinvoice/cropinvoice.component';
     NgChartsModule,
     NgApexchartsModule,
     AdminRoutingModule,
+  
     NgxEchartsModule.forRoot({
         echarts: () => import('echarts')
       }),
 
-  ]
+  ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AdminModule { }

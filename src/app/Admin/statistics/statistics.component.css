@@ -21,6 +21,105 @@
     width: 100%;
     z-index: 1000;
 }
+.row{
+	padding-left:75px;
+	padding-right: 75px;
+	padding-top: 20px;
+	padding-bottom: 50px;
+	
+}
+
+.card-body{
+	display:flex;
+	align-items: center;
+	justify-content:center;
+	padding-top:30px;
+	
+	
+}
+.card1{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:20px;
+	/* background-image: url("https://media.istockphoto.com/id/513652829/photo/candlestick-pattern.jpg?s=612x612&w=0&k=20&c=0tGMrBevj867chjSY0r4LC_zmzHtap846Fr8gOLrS7Q="); */
+}
+.skill{
+	width: 160px;
+	height:160px;
+	/* background:cornflowerblue; */
+	position: relative;
+
+}
+.outer{
+	height:160px;
+	width:160px;
+	border-radius:50%;
+	
+	padding :20px;
+	box-shadow:6px 6px 10px -1px rgba(0,0,0,0.15),
+	-6px -6px 10px -1px rgba(255,255,255,0.7)
+}
+.inner{
+	height:120px;
+	width:120px;
+	border-radius: 50%;
+	
+	box-shadow:inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+	inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+	-0.5px -0.5px 0px rgba(255,255,255,0.7),
+	0.5px 0.5px 0px rgba(0,0,0,0.15),
+	0px 12px 10px -10px rgba(0,0,0,0.05);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+#number{
+	font-weight: 600;
+	color:#555;
+}
+circle{
+	fill:none;
+	stroke:url(#GradientColor);
+	stroke-width: 20px;
+	stroke-dasharray: 472;
+	stroke-dashoffset: 472;
+	animation:anim 2s linear forwards;
+}
+svg{
+	position:absolute;
+	top:0;
+	left:0;
+
+}
+
+@keyframes anim{
+	100%{
+		stroke-dashoffset: 165;
+	}
+}
+h3{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding:20px;
+}
+.graph{
+	background:cover;
+	background-repeat: 0;
+	background-image: url("https://media.istockphoto.com/id/513652829/photo/candlestick-pattern.jpg?s=612x612&w=0&k=20&c=0tGMrBevj867chjSY0r4LC_zmzHtap846Fr8gOLrS7Q=");
+}
+.navbar-nav{
+	padding-left: 340px;
+}
+.nav-item{
+	padding-left:50px;
+
+}
+.navbar-brand{
+	padding-left: 20px;
+}
 
 
 /* Add this CSS to push down the content below the fixed navbar */
