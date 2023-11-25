@@ -14,6 +14,7 @@ import { SignupasfarmerComponent } from './signupasfarmer/signupasfarmer.compone
 import { SignupasuserComponent } from './signupasuser/signupasuser.component';
 import { SignupasadminComponent } from './signupasadmin/signupasadmin.component';
 
+import { CropsModule } from './crops/crops.module';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +33,8 @@ import { SignupasadminComponent } from './signupasadmin/signupasadmin.component'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    AdminModule
+    AdminModule,
+    CropsModule
     
   ],
   providers: [],

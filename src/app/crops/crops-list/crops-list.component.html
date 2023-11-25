@@ -1,0 +1,11 @@
+<!-- crop-list.component.html -->
+
+<div>
+  <h2>Crop List</h2>
+  <div *ngFor="let crop of cropNames">
+    <!-- Use routerLink to directly set the route -->
+    
+      <div class="crop-card" (click)="navigateToMarketPrice(crop)">{{ crop }}</div>
+
+  </div>
+</div>

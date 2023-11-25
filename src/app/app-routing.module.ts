@@ -11,6 +11,7 @@ import { SignupasuserComponent } from './signupasuser/signupasuser.component';
 import { SignupasfarmerComponent } from './signupasfarmer/signupasfarmer.component';
 import { SignupasadminComponent } from './signupasadmin/signupasadmin.component';
 
+import { MarketPricesComponent } from './crops/market-prices/market-prices.component';
 
 
 
@@ -24,6 +25,11 @@ const routes: Routes = [
 {
   path:'admin', loadChildren: ()=> import('./Admin/admin.module').then(m => m.AdminModule),
 },
+
+{
+  path:'crops', loadChildren: ()=> import('./crops/crops.module').then(m => m.CropsModule),
+},
+{ path: 'market-price/:cropName', component: MarketPricesComponent },
 
 {
   path:'loginasuser',component:LoginasuserComponent
