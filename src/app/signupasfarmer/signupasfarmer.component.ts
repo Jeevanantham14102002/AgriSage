@@ -14,9 +14,9 @@ export class SignupasfarmerComponent {
 
   constructor(private SignupserviceService: SignupserviceService) {}
 
-  signUp(): void {
+  signupasfarmer(): void {
     if (this.checkEmailAndPassword(this.email,this.password)) {
-      this.SignupserviceService.signUp(this.email, this.password).subscribe(
+      this.SignupserviceService.signupasfarmer(this.email, this.password).subscribe(
         (response) => {
           console.log('Farmer created successfully:', response);
           // Handle success, e.g., redirect to login page
