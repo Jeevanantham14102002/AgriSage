@@ -15,6 +15,7 @@ import { SignupasuserComponent } from './signupasuser/signupasuser.component';
 import { SignupasadminComponent } from './signupasadmin/signupasadmin.component';
 
 import { CropsModule } from './crops/crops.module';
+import { BackendComponent } from './backend/backend.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,6 +28,7 @@ import { CropsModule } from './crops/crops.module';
     SignupasfarmerComponent,
     SignupasuserComponent,
     SignupasadminComponent,
+    BackendComponent,
     
     
   ],
