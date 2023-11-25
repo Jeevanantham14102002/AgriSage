@@ -1,28 +1,28 @@
-<div class="wrapper" style="color:aqua">
-    <div class="container main" style=" color:rgb(219, 144, 33)">
-      <div class="row">
-        <div class="col-md-6 side-image">
-        
-        </div>
-        <div class="col-md-6 right">
-          <div class="input-box">
-            <header>Create account as Farmer</header>
-            <div class="input-field">
-              <input type="text" class="input" id="email" required="" autocomplete="off">
-              <label for="email">Email</label> 
-            </div> 
-            <div class="input-field">
-              <input type="password" class="input" id="pass" required="">
-              <label for="pass">Password</label>
-            </div> 
-            <div class="input-field">
-              <input type="submit" class="submit" value="Sign Up">
-            </div> 
-            <div class="signin">
-              <span>Already have an account? <a href="#" [routerLink]="['/loginforpage']">Log in here</a></span>
-            </div>
-          </div>  
+<!-- signupasfarmer.component.html -->
+
+<div class="wrapper" style="color: aqua">
+  <div class="container main" style="color: rgb(219, 144, 33)">
+    <div class="row">
+      <div class="col-md-6 side-image"></div>
+      <div class="col-md-6 right">
+        <div class="input-box">
+          <header>Create account as Farmer</header>
+          <div class="input-field">
+            <input type="text" class="input" (ngModel)="email" required autocomplete="off">
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field">
+            <input type="password" class="input" (ngModel)="password" required>
+            <label for="pass">Password</label>
+          </div>
+          <div class="input-field">
+            <button class="submit" (click)="signUp()">Sign Up</button>
+          </div>
+          <div class="signin">
+            <span>Already have an account? <a href="#" [routerLink]="['/loginforpage']">Log in here</a></span>
+          </div>
         </div>
       </div>
     </div>
   </div>
+</div>
