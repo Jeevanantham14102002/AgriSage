@@ -54,6 +54,7 @@
 
 import { Component, ChangeDetectorRef } from '@angular/core';
 import { SignupserviceService } from 'src/app/signupservice.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signupasfarmer',
@@ -63,12 +64,13 @@ import { SignupserviceService } from 'src/app/signupservice.service';
 export class SignupasfarmerComponent {
   email: string = '';
   password: string = '';
+  router: any;
 
   constructor(
     private signupService: SignupserviceService,
     private cdr: ChangeDetectorRef
   ) {}
-
+    
   signUp(): void {
     if (this.validateInput()) {
       this.signupService.signUp(this.email, this.password).subscribe(
@@ -97,5 +99,9 @@ export class SignupasfarmerComponent {
     // Implement your input validation logic here
     // Return true if the input is valid, false otherwise
     return this.email.trim() !== '' && this.password.trim() !== '';
+  }
+  onLoginClick() {
+    // Navigate to the crops module route
+    this.router.navigate(['/signupservice']);
   }
 }

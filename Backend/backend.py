@@ -1,31 +1,3 @@
-# from flask import Flask, request, jsonify
-# import pandas as pd
-# import json
-# from flask_cors import CORS
-
-# from pymongo import MongoClient
-
-
-# app = Flask(_name_)
-# cors = CORS(app)
-# # Connect to MongoDB Atlas
-# client = MongoClient('mongodb+srv://Arunachalam:Arunachalam@cluster0.umxzxzr.mongodb.net/Users?retryWrites=true&w=majority')
-# db = client['Users']
-# collection = db['details']
-
-# # Route for adding a new user with email and password
-
-# @app.route('/details', methods=['POST'])
-
-# def signup():
-#     email = request.json['email']
-#     password = request.json['password']
-#     collection.insert_one({'email': email, 'password': password})
-#     return jsonify({'message': 'User added successfully'}), 200
-
-
-
-# backend.py
 
 
 from flask import Flask, request, jsonify
@@ -53,6 +25,9 @@ def signup_farmer():
         return jsonify({'message': 'Farmer created successfully'}), 201
     else:
         return jsonify({'message': 'Invalid input'}), 400
+    
+
 
 if __name__ == '__main__':
     app.run(debug=True)
+
