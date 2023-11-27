@@ -24,7 +24,7 @@ export class SignupserviceService {
 
   constructor(private http: HttpClient) {}
 
-  signUp(email: string, password: string): Observable<any> {
+  signupasfarmer(email: string, password: string): Observable<any> {
     const farmerData = { email, password };
     return this.http.post(`${this.apiUrl}${this.signupEndpoint}`, farmerData);
   }
