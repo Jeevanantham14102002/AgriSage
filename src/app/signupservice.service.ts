@@ -1,19 +1,9 @@
-// import { Injectable } from '@angular/core';
 
-// @Injectable({
-//   providedIn: 'root'
-// })
-// export class SignupserviceService {
-
-//   constructor() { }
-// }
-
-
-// signupservice.service.ts
 
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -23,6 +13,7 @@ export class SignupserviceService {
   private signupEndpoint1 = '/signup-farmer'; // Update with your signup endpoint
   private signupEndpoint2 = '/signup-admin'; // Update with your signup endpoint
   private signupEndpoint3 = '/signup-user'; // Update with your signup endpoint
+  
   constructor(private http: HttpClient) {}
 
   signupasfarmer(email: string, password: string): Observable<any> {

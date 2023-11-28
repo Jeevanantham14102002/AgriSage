@@ -1,3 +1,5 @@
+
+
 <div class="wrapper" style="color: aqua">
   <div class="container main" style="color: rgb(219, 144, 33)">
     <div class="row">
@@ -5,6 +7,7 @@
       <div class="col-md-6 right">
         <div class="input-box">
           <header>Create account as Farmer</header>
+
           <div class="input-field">
             <input type="text" class="input" [(ngModel)]="email" required autocomplete="on">
             <label for="email">Email</label>
@@ -15,6 +18,7 @@
           </div>
           <div class="input-field">
             <button class="submit" (click)="signupasfarmer()">Sign Up</button>
+          <div *ngIf="signupSuccess" class="success-message">Signup Successful</div>
 
           <div class="signin">
             <span>Already have an account? <a [routerLink]="['/loginforpage']">Log in here</a></span>
@@ -23,4 +27,5 @@
       </div>
     </div>
   </div>
+</div>
 </div>

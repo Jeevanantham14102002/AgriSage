@@ -15,17 +15,19 @@ export class LoginasfarmerComponent {
   constructor(private loginService: LoginService, private router: Router) {}
 
   onLoginClick(): void {
-    this.loginService.login(this.email, this.password).subscribe(
+
+      this.loginService.loginasfarmer(this.email, this.password).subscribe(
+
       (response) => {
-        console.log('Login successful:', response);
-        // Navigate to the next page on successful login
-        this.router.navigate(['/signupasfarmer']);
-      },
-      (error) => {
-        console.error('Error logging in:', error);
-        // Show an alert box if data is not found
-        alert('Data not found. Please check your credentials.');
-      }
-    );
+          console.log('Farmer created successfully:', response);
+           this.router.navigate(['/crops']);
+
+          // Handle success, e.g., redirect to login page
+        },
+        (error) => {
+          console.error('Error creating farmer:', error);
+          // Handle error, e.g., display an error message
+        }
+      );
+    } 
   }
-}

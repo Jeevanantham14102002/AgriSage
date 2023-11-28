@@ -4,6 +4,8 @@ import { Component } from '@angular/core';
 import { SignupserviceService } from 'src/app/signupservice.service';
 import { RouterModule, Routes } from '@angular/router'; // Import RouterModule and Routes
 import { Router } from '@angular/router';
+import { LoginService } from 'src/app/loginservice.service';
+
 @Component({
   selector: 'app-signupasfarmer',
   templateUrl: './signupasfarmer.component.html',
@@ -12,7 +14,8 @@ import { Router } from '@angular/router';
 export class SignupasfarmerComponent {
   email: string = '';
   password: string = '';
-  
+  signupSuccess: boolean = false;
+
 
   
 
@@ -24,7 +27,10 @@ export class SignupasfarmerComponent {
       this.SignupserviceService.signupasfarmer(this.email, this.password).subscribe(
         (response) => {
           console.log('Farmer created successfully:', response);
+          this.signupSuccess = true; // Set the success flag
+
           this.router.navigate(['/loginasfarmer']);
+          console.log(this.signupSuccess); // Log the success flag
 
           // Handle success, e.g., redirect to login page
         },

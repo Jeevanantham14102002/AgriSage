@@ -64,18 +64,27 @@ import { catchError, tap } from 'rxjs/operators';
   providedIn: 'root',
 })
 export class LoginService {
-  private baseUrl = 'http://localhost:5500'; // Update with your Flask server URL
+  baseUrl = 'http://localhost:5000'; // Update with your Flask server URL
+  LoginEndPoint1='/loginasfarmer'
+  LoginEndPoint2='/loginasadmin'
+  LoginEndPoint3='/loginasuser'
+
 
   constructor(private http: HttpClient) {}
 
-  login(email: string, password: string): Observable<LoginResponse> {
-    const data = { email, password };
-    return this.http.post<LoginResponse>(`${this.baseUrl}/login`, data).pipe(
-      tap(response => console.log('Server Response:', response)),
-      catchError(error => {
-        console.error('Error in login service:', error);
-        throw error;
-      })
-    );
+  loginasfarmer(email: string, password: string): Observable<any> {
+    const farmerData = { email, password };
+    console.log(farmerData)
+    return this.http.post(`${this.baseUrl}${this.LoginEndPoint1}`, farmerData);
+  }
+  loginasadmin(email: string, password: string): Observable<any> {
+    const adminData = { email, password };
+    console.log(adminData)
+    return this.http.post(`${this.baseUrl}${this.LoginEndPoint2}`, adminData);
+  }
+  loginasuser(email: string, password: string): Observable<any> {
+    const userData = { email, password };
+    console.log(userData)
+    return this.http.post(`${this.baseUrl}${this.LoginEndPoint3}`, userData);
   }
 }
