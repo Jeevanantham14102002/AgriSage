@@ -6,8 +6,8 @@
         </div>
         <div class="col-md-6 right">
           <div class="input-box">
-            <header>Create account as Farmer</header>
-            <div class="input-field">
+            <header>Create account as Admin</header>
+            <!-- <div class="input-field">
               <input type="text" class="input" id="email" required="" autocomplete="off">
               <label for="email">Email</label> 
             </div> 
@@ -17,9 +17,26 @@
             </div> 
             <div class="input-field">
               <input type="submit" class="submit" value="Sign Up">
-            </div> 
+            </div>  -->
+              <div class="input-field">
+                <input type="text" class="input" [(ngModel)]="email" required autocomplete="on">
+                <label for="email">Email</label>
+              </div>
+              <div class="input-field">
+                <input type="password" class="input" [(ngModel)]="password" required autocomplete="on">
+                <label for="pass">Password</label>
+              </div>
+              <div class="input-field">
+                <!-- <button class="submit" (click)="signUp()">Sign Up</but       
+                -->     
+                <button class="submit" (click)="signupasadmin()">Sign Up</button>
+    
+
+
+
+
             <div class="signin">
-              <span>Already have an account? <a  [routerLink]="['/loginforpage']">Log in here</a></span>
+              <span>Already have an account? <a  routerLink="['/loginforpage']">Log in here</a></span>
             </div>
           </div>  
         </div>

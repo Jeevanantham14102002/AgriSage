@@ -15,6 +15,7 @@ import { SignupasuserComponent } from './signupasuser/signupasuser.component';
 import { SignupasadminComponent } from './signupasadmin/signupasadmin.component';
 import { FormsModule } from '@angular/forms';
 import { CropsModule } from './crops/crops.module';
+import { HttpClientModule } from '@angular/common/http'
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +36,8 @@ import { CropsModule } from './crops/crops.module';
     AppRoutingModule,
     AdminModule,
     CropsModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],

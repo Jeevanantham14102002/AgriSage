@@ -1,9 +1,9 @@
 // signupasfarmer.component.ts
-
+import { NgModel } from '@angular/forms';
 import { Component } from '@angular/core';
 import { SignupserviceService } from 'src/app/signupservice.service';
+import { RouterModule, Routes } from '@angular/router'; // Import RouterModule and Routes
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-signupasfarmer',
   templateUrl: './signupasfarmer.component.html',
@@ -12,15 +12,20 @@ import { Router } from '@angular/router';
 export class SignupasfarmerComponent {
   email: string = '';
   password: string = '';
-  router: any;
+  
 
-  constructor(private SignupserviceService: SignupserviceService) {}
+  
+
+  constructor(private SignupserviceService: SignupserviceService,
+    private router: Router ) {}
 
   signupasfarmer(): void {
     if (this.checkEmailAndPassword(this.email,this.password)) {
       this.SignupserviceService.signupasfarmer(this.email, this.password).subscribe(
         (response) => {
           console.log('Farmer created successfully:', response);
+          this.router.navigate(['/loginasfarmer']);
+
           // Handle success, e.g., redirect to login page
         },
         (error) => {
