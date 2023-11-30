@@ -10,6 +10,109 @@ CORS(app)  # Enable CORS for all routes
 synthetic_area_folder = 'F://archive (3)//daily_crop_data//Synthetic_area//'
 final_prediction_folder = 'F://archive (3)//daily_crop_data//final_prediction//'
 
+db = client['Users']  # Replace 'your_database_name' with your actual database name
+collection1 = db['signupasfarmer']  # Assuming you want to store farmer data in a 'farmers' collection
+collection2 = db['signupasadmin'] 
+collection3 = db['signupasuser'] 
+collection4 = db['signupasfarmer']
+
+
+@app.route('/signup-farmer', methods=['POST'])
+def signup_farmer():
+    data = request.get_json()
+
+    if 'email' in data and 'password' in data:
+        email = data['email']
+        password = data['password']
+
+        # Perform validation here if needed
+
+        farmer_data = {'email': email, 'password': password}
+        collection1.insert_one(farmer_data)
+        return jsonify({'message': 'Farmer created successfully'}), 201
+    else:
+        return jsonify({'message': 'Invalid input'}), 400
+
+
+@app.route('/signup-admin', methods=['POST'])
+def signup_admin():
+    data = request.get_json()
+
+    if 'email' in data and 'password' in data:
+        email = data['email']
+        password = data['password']
+
+        # Perform validation here if needed
+
+        admin_data = {'email': email, 'password': password}
+        collection2.insert_one(admin_data)
+        return jsonify({'message': 'Admin created successfully'}), 201
+    else:
+        return jsonify({'message': 'Invalid input'}), 400
+    
+
+@app.route('/signup-user', methods=['POST'])
+def signup_user():
+    data = request.get_json()
+
+    if 'email' in data and 'password' in data:
+        email = data['email']
+        password = data['password']
+
+        # Perform validation here if needed
+
+        user_data = {'email': email, 'password': password}
+        collection3.insert_one(user_data)
+        return jsonify({'message': 'User created successfully'}), 201
+    else:
+        return jsonify({'message': 'Invalid input'}), 400
+
+
+
+
+@app.route('/loginasfarmer', methods=['POST','GET'])
+def loginasfarmer():
+    data = request.get_json()
+    email = data['email']
+    password = data['password']
+    print(data)
+    user = collection1.find_one({'email': email, 'password': password})
+
+    if user:
+        return jsonify({'message': 'Login successful'}), 200
+    else:
+        return jsonify({'message': 'Data not found. Please check your credentials.'}), 404
+
+
+
+@app.route('/loginasadmin', methods=['POST','GET'])
+def loginasadmin():
+    data = request.get_json()
+    email = data['email']
+    password = data['password']
+    print(data)
+    user = collection2.find_one({'email': email, 'password': password})
+
+    if user:
+        return jsonify({'message': 'Login successful'}), 200
+    else:
+        return jsonify({'message': 'Data not found. Please check your credentials.'}), 404
+
+
+
+@app.route('/loginas', methods=['POST','GET'])
+def loginasuser():
+    data = request.get_json()
+    email = data['email']
+    password = data['password']
+    print(data)
+    user = collection2.find_one({'email': email, 'password': password})
+
+    if user:
+        return jsonify({'message': 'Login successful'}), 200
+    else:
+        return jsonify({'message': 'Data not found. Please check your credentials.'}), 404
+    
 @app.route('/crops')
 def get_crop_names():
     crop_names = [os.path.splitext(file)[0] for file in os.listdir(synthetic_area_folder) if file.endswith('.csv')]
