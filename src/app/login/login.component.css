@@ -53,6 +53,7 @@
   .btn-secondary {
     margin-top: 10px; /* Add spacing between buttons */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.7); /* Add a subtle shadow effect */
+    width: 200px;
     
 }
   
