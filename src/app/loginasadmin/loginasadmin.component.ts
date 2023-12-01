@@ -31,7 +31,7 @@ export class LoginasadminComponent {
 
       (response) => {
           console.log('Login successfully:', response);
-           this.router.navigate(['/crops']);
+           this.router.navigate(['/admin']);
 
           // Handle success, e.g., redirect to login page
         },

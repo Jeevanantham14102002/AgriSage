@@ -3,12 +3,16 @@ from flask_cors import CORS  # Import the CORS extension
 import os
 import pandas as pd
 import urllib
+from pymongo import MongoClient
+
+
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Replace this path with the actual path to your CSV files
-synthetic_area_folder = 'F://archive (3)//daily_crop_data//Synthetic_area//'
-final_prediction_folder = 'F://archive (3)//daily_crop_data//final_prediction//'
+synthetic_area_folder = 'F://archieve(3)//daily_crop_data//Synthetic_area//'
+final_prediction_folder = 'F://archieve(3)//daily_crop_data//final_prediction//'
+client = MongoClient('mongodb+srv://Arunachalam:Arunachalam@cluster0.umxzxzr.mongodb.net/Users?retryWrites=true&w=majority')
 
 db = client['Users']  # Replace 'your_database_name' with your actual database name
 collection1 = db['signupasfarmer']  # Assuming you want to store farmer data in a 'farmers' collection

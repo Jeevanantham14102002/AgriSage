@@ -1,7 +1,30 @@
-.crop-card {
+/* .crop-card {
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
     cursor: pointer;
+  } */
+  .crop-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .crop-container {
+    width: 33.33%; /* Set to 33.33% for three columns */
+    box-sizing: border-box;
+    padding:15px;
   }
   
+  .crop-card {
+    border: 1px solid #ccc;
+    margin: 8px;
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    
+  }
+  .crop-card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
+    transform: scale(1.1); /* Scale the card on hover */
+
+  }
