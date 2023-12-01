@@ -3,48 +3,41 @@ export let ApexSyntheticData: any = {
       name: 'Previous Prices',
       data: [],  // We'll fill this with fetched data
     }],
+    colors: ['#4454c3'],
     chart: {
-      id: 'previous-data',
-      type: 'line',
-      colors: ['#4454c3'],
-      height: 400,
-      zoom: {
-        autoScaleYaxis: false
-      },
-      toolbar: {
-        show: false  // Hide toolbar to make it a clean line chart
-      }
-
-    },
-    dataLabels: {
-      enabled: false
-    },
-    stroke: {
-        curve: 'smooth',
-        width: 2,
-        colors: ['#4454c3']  // Set line color
-      },
-      
-    markers: {
-      size: 0,  // Set marker size to 0 to hide markers
-    },
-    xaxis: {
-      type: 'datetime',
-      tickAmount: 6,
+        id: 'area-datetime',
+        type: 'area',
+        height: 220,
+        zoom: {
+            autoScaleYaxis: false
+        }
     },
     yaxis: {
-      show: false
+        show:false
+     },
+  
+  
+    markers: {
+        size: 0
+    },
+    xaxis: {
+        type: 'datetime',
+        min: new Date('01 Mar 2012').getTime(),
+        tickAmount: 6,
     },
     tooltip: {
-      x: {
-        format: 'dd MMM yyyy'
-      }
+        x: {
+            format: 'dd MMM yyyy'
+        }
     },
-    grid: {
-      show: false
+  
+    grid:{
+        show:false
     },
-    colors: ['#4454c3'],  // Set line color
-  };
+    dataLabels: {
+        enabled: false
+    },
+  }
   
   export let ApexFinalPriceData: any = {
     series: [{
