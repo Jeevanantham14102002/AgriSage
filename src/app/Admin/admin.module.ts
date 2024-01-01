@@ -6,13 +6,15 @@ import { NgChartsModule } from 'ng2-charts';
 import { AdminmainComponent } from './adminmain/adminmain.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { AdminRoutingModule } from './admin-routing.module';
-import { CropinvoiceComponent } from './cropinvoice/cropinvoice.component';
-
+import { CropinvoiceComponent } from './overallstats/cropinvoice.component';
+import { DailystatsComponent } from './dailystats/dailystats.component';
 @NgModule({
   declarations: [
     AdminmainComponent,
     StatisticsComponent,
     CropinvoiceComponent,
+    DailystatsComponent
+
 
   ],
   imports: [

@@ -15,7 +15,9 @@ import { SignupasuserComponent } from './signupasuser/signupasuser.component';
 import { SignupasadminComponent } from './signupasadmin/signupasadmin.component';
 import { FormsModule } from '@angular/forms';
 import { CropsModule } from './crops/crops.module';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +29,8 @@ import { HttpClientModule } from '@angular/common/http'
     LoginasadminComponent,
     SignupasfarmerComponent,
     SignupasuserComponent,
-    SignupasadminComponent
+    SignupasadminComponent,
+
     
     
   ],

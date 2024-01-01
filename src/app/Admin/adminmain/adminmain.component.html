@@ -5,35 +5,32 @@
 		<span class="navbar-toggler-icon"></span>
 	  </button>
 	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-		<ul class="navbar-nav ml-auto"> <!-- Add ml-auto class here -->
+		<ul class="navbar-nav mr-auto"> <!-- Add mr-auto class here -->
 		  <li class="nav-item">
 			<a class="nav-link active" aria-current="page" href="#">Home</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link"  [routerLink]="['statistics']">Statistics</a>
-		  </li><li class="nav-item">
-			<a class="nav-link" [routerLink]="['cropinvoice']">Crop Invoice</a>
+			<a class="nav-link active" aria-current="page" [routerLink]="['daily-stats']">Daily stats</a>
 		  </li>
-		  <!-- <li class="nav-item">
+		  <li class="nav-item">
+			<a class="nav-link" [routerLink]="['statistics']">Statistics</a>
+		  </li>
+		  <li class="nav-item">
+			<a class="nav-link" [routerLink]="['cropinvoice']">Overall stats</a>
+		  </li>
+		   <li class="nav-item">
 			<a class="nav-link">Manage Users</a>
-		  </li> -->
+		  </li> 
 		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i>
-			  Manage Users
-			</a>
+			<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> Manage Users</a>
 			<ul class="dropdown-menu">
 			  <li><a class="dropdown-item" href="#">Farmer</a></li>
 			  <li><a class="dropdown-item" href="#">Admin</a></li>
 			  <li><a class="dropdown-item" href="#">User</a></li>
 			</ul>
 		  </li>
-		  <li class="nav-item">
-			<a class="nav-link">Upload</a>
-		  </li>
 		  <li class="nav-item dropdown">
-			<a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i>
-			  Profile
-			</a>
+			<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> Profile</a>
 			<ul class="dropdown-menu">
 			  <li><a class="dropdown-item" href="#">Action</a></li>
 			  <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -45,4 +42,5 @@
 	</div>
   </nav>
   
-<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
+  
