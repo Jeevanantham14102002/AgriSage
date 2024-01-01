@@ -12,12 +12,20 @@
 <hr>
 <h2 style="justify-content: center;">Crop_List</h2>
 <hr>
-
 <div class="crop-list">
   <div class="crop-container" *ngFor="let crop of cropNames">
-    <div class="crop-card" (click)="navigateToMarketPrice(crop)">
-      {{ crop.replace('_daily', '') }}
+    <div class="crop-card" (click)="navigateToMarketPrice(crop)" >
+
+      <div class="crop-details">
+        <img src="../../assets/{{ crop.replace('_daily', '') }}.jpg" alt="{{ crop.replace('_daily', '') }} Image" class="crop-image">
+        <div class="crop-name">{{ crop.replace('_daily', '') }}</div>
+        <!-- Add any additional details you want to display -->
+      </div>
+
     </div>
   </div>
 </div>
+
+
+
 

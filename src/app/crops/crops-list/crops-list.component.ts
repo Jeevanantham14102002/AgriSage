@@ -28,4 +28,6 @@ export class CropsListComponent implements OnInit {
       console.error('No crop name provided');
     }
   }
+
+  
 }
