@@ -13,11 +13,14 @@
     width: 33.33%; /* Set to 33.33% for three columns */
     box-sizing: border-box;
     padding:15px;
+    
   }
   
 
   .crop-card {
-      border: 1px solid #ddd;
+    
+      background-color: #d4d4d4;
+      border: 1px solidrgb(92, 92, 92)0;
       margin: 10px;
       padding: 20px;
       text-align: center;
@@ -25,24 +28,41 @@
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease-in-out;
-    
+      
       /* Gradient background for a more immersive look */
-      background: linear-gradient(to bottom, #f8f8f8, #eaeaea);
+      /* background: linear-gradient(to bottom, #f8f8f8, #eaeaea);
       display: flex;
-      flex-direction: column;
+      flex-direction: column; */
+      box-sizing: border-box; /* Include padding in width calculation */
+
+  /* Set a fixed height for the cards */
+  height: 300px;
+
+  /* Center content vertically and horizontally */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+     
     }
     
     .crop-image {
-      width: 100%;
-      border-radius: 8px 8px 0 0; /* Rounded top corners */
-      object-fit: cover; /* Maintain aspect ratio and cover the container */
+      width: 100%; /* Set the image width to fill its container */
+      height: 150px; /* Set the desired height for the image */
+      border-radius: 8px 8px 0 0;
+      object-fit: cover;
     }
     
     .crop-details {
-      padding: 16px;
+      /* padding: 16px; */
+      display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  height: 100%;
     }
     
     .crop-name {
+      padding:20px;
       font-size: 1.5em;
       color: #333;
       margin-bottom: 10px;
