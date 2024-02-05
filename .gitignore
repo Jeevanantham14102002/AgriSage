@@ -1,5 +1,2 @@
 node_modules
 .angular
-package.json
-package-lock.json
-tsconfig.json
