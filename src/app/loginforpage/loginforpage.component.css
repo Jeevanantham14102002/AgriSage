@@ -10,7 +10,7 @@
 }
 
 .card1{
-    background-image: url("../assets/loginpagecardbg.jpg");
+    background-image: url("../../assets/loginpagecardbg.jpg");
     padding:10px;
     border-radius: 10px;
     background-repeat:none;
@@ -19,7 +19,7 @@
     backdrop-filter: blur(5px);
 }
 .card2{
-    background-image: url("../assets/loginpagecardbg.jpg");
+    background-image: url("../../assets/loginpagecardbg.jpg");
     padding:10px;
     border-radius: 10px;
     background-repeat:none;
@@ -27,7 +27,7 @@
     box-shadow: 10px 10px 16px rgba(139, 139, 139);
 }
 .card3{
-    background-image: url("../assets/loginpagecardbg.jpg");
+    background-image: url("../../assets/loginpagecardbg.jpg");
     padding:10px;
     border-radius: 10px;
     background-repeat:none;
