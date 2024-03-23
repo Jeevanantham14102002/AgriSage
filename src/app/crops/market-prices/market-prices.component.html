@@ -1,5 +1,8 @@
-<div>
+
+<div class="selectDistrict">
+ <div class="selectedDistrict">
   <label for="districtDropdown">Select District:</label>
+  </div>
   <select id="districtDropdown" [(ngModel)]="selectedDistrict" (change)="onDistrictChange()">
     <option *ngFor="let district of districts" [value]="district">{{ district }}</option>
   </select>

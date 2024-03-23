@@ -1,4 +1,16 @@
 .chart-container {
     height: 400px; /* Set a suitable height */
   }
+
+  .selectDistrict{
+    padding-top:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .selectedDistrict{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-right: 5px;
+    font-size: 25px;
+  }
   

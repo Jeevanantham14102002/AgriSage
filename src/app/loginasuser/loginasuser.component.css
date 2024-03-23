@@ -16,7 +16,7 @@
     min-height: 100vh;
 }
 .side-image{
-    background-image: url("../assets/loginasuser.jpg");
+    background-image: url("../../assets/loginasuser.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

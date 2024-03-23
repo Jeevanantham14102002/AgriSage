@@ -10,7 +10,7 @@
 			<a class="nav-link active" aria-current="page" href="#">Home</a>
 		  </li>
 		  <li class="nav-item">
-			<a class="nav-link active" aria-current="page" [routerLink]="['daily-stats']">Daily stats</a>
+			<a class="nav-link active" aria-current="page" [routerLink]="['daily-stats']">Daily status</a>
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" [routerLink]="['statistics']">Statistics</a>
@@ -24,8 +24,8 @@
 		  <li class="nav-item dropdown">
 			<a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-person"></i> Manage Users</a>
 			<ul class="dropdown-menu">
-			  <li><a class="dropdown-item" href="#">Farmer</a></li>
-			  <li><a class="dropdown-item" href="#">Admin</a></li>
+			  <li><a class="dropdown-item" href="#" [routerLink]="['farmerlist']">Farmer</a></li>
+			  <li><a class="dropdown-item" href="#" [routerLink]="['adminlist']">Admin</a></li>
 			  <li><a class="dropdown-item" href="#">User</a></li>
 			</ul>
 		  </li>
@@ -41,6 +41,7 @@
 	  </div>
 	</div>
   </nav>
+<hr>
   
   <router-outlet></router-outlet>
   

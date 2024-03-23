@@ -1,44 +1,45 @@
-/* .crop-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    cursor: pointer;
-  } */
+
   .crop-list {
     display: flex;
     flex-wrap: wrap;
   }
 
   .crop-container {
-    width: 33.33%; /* Set to 33.33% for three columns */
+
+    /* background-color: #200000; */
+    background-color: whitesmoke;
+    width: 33.33%;
     box-sizing: border-box;
     padding:15px;
-    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
   
 
   .crop-card {
-    
-      background-color: #d4d4d4;
-      border: 1px solidrgb(92, 92, 92)0;
+    background-image: url('https://i.pinimg.com/originals/71/59/74/7159745dd98afea51b604f2f8c443ab7.jpg');
+    /* background-color: rgba(213, 178, 242, 0.323); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+      border: 1px solidrgb(#cda400);
       margin: 10px;
-      padding: 20px;
+      padding: 10px;
       text-align: center;
       cursor: pointer;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      /* box-shadow: 0 4px 8px #fcdf0329; */
+      box-shadow: 0 4px 8px #66666629;
+
       transition: transform 0.3s ease-in-out;
-      
-      /* Gradient background for a more immersive look */
-      /* background: linear-gradient(to bottom, #f8f8f8, #eaeaea);
-      display: flex;
-      flex-direction: column; */
-      box-sizing: border-box; /* Include padding in width calculation */
+      border-width: 5px solidrgb(#cda400);
 
-  /* Set a fixed height for the cards */
-  height: 300px;
-
-  /* Center content vertically and horizontally */
+     
+    
+      box-sizing: border-box;
+  width:470px;
+  height: 400px;
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,29 +47,28 @@
     }
     
     .crop-image {
-      width: 100%; /* Set the image width to fill its container */
-      height: 150px; /* Set the desired height for the image */
-      border-radius: 8px 8px 0 0;
+      width: 97%;
+      height: 230px; 
+      border-radius: 5px 5px 5px 5px;
       object-fit: cover;
     }
     
     .crop-details {
-      /* padding: 16px; */
+      
       display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center; 
+  justify-content: center; 
   height: 100%;
     }
     
     .crop-name {
-      padding:20px;
+      padding:10px;
       font-size: 1.5em;
-      color: #333;
+      color: #f4bf00;
       margin-bottom: 10px;
       
-  
-    /* Additional styles for content inside the card */
+
     h3 {
       font-size: 1.5em;
       color: #333;
@@ -83,10 +83,16 @@
   
   
   .crop-card:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add box shadow on hover */
-    transform: scale(1.1); /* Scale the card on hover */
+    /* box-shadow: 0px 0px 20px rgb(255, 222, 7);  */
+    box-shadow: 0px 0px 20px rgb(30, 30, 30); 
 
-  }
+    transform: scale(1.05);
+    
 
+  } 
+hr{
+  color: #f4bf00;
+  background-color: #340101;
+}
 
 

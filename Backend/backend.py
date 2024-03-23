@@ -10,8 +10,8 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
 
 # Replace this path with the actual path to your CSV files
-synthetic_area_folder = 'F://agri-dataset//daily_crop_data//Synthetic_area//'
-final_prediction_folder = 'F://agri-dataset//daily_crop_data//final_prediction//'
+synthetic_area_folder = 'F://archieve(3)//daily_crop_data//Synthetic_area//'
+final_prediction_folder = 'F://archieve(3)//daily_crop_data//final_prediction//'
 client = MongoClient('mongodb+srv://Arunachalam:Arunachalam@cluster0.umxzxzr.mongodb.net/Users?retryWrites=true&w=majority')
 
 db = client['Users']  # Replace 'your_database_name' with your actual database name
@@ -150,6 +150,15 @@ def get_districts(crop):
     available_districts = synthetic_data['District_Name'].unique()
     return jsonify(list(available_districts))
 
+@app.route('/get-farmers', methods=['GET'])
+def get_farmers():
+    farmers = list(collection1.find({}, {'_id': 0}))  # Exclude _id field from the result
+    return jsonify(farmers)
+
+@app.route('/get-admins', methods=['GET'])
+def get_admins():
+    admins = list(collection2.find({}, {'_id': 0}))  # Exclude _id field from the result
+    return jsonify(admins)
 # Define the route to get data for a specific district
 @app.route('/data-for-district/<crop>/<district>')
 def get_data_for_district(crop, district):

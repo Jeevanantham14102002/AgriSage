@@ -1,5 +1,5 @@
 // signupasfarmer.component.ts
-import { NgModel } from '@angular/forms';
+// import { NgModel } from '@angular/forms';
 import { Component } from '@angular/core';
 import { SignupserviceService } from 'src/app/signupservice.service';
 import { RouterModule, Routes } from '@angular/router'; // Import RouterModule and Routes

@@ -8,12 +8,17 @@ import { StatisticsComponent } from './statistics/statistics.component';
 import { AdminRoutingModule } from './admin-routing.module';
 import { CropinvoiceComponent } from './overallstats/cropinvoice.component';
 import { DailystatsComponent } from './dailystats/dailystats.component';
+import { AdminListComponent } from './adminlist/adminlist.component';
+import { FarmerListComponent } from './farmerlist/farmerlist.component';
+
 @NgModule({
   declarations: [
     AdminmainComponent,
     StatisticsComponent,
     CropinvoiceComponent,
-    DailystatsComponent
+    DailystatsComponent,
+    AdminListComponent,
+    FarmerListComponent
 
 
   ],

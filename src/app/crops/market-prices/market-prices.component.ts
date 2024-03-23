@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { CropsService } from 'src/app/crops.service';
 import * as chartData from '../../chart/apex';
 import { format, isValid, parseISO } from 'date-fns';
+import { ApexAnnotations } from 'ng-apexcharts';
 
 @Component({
   selector: 'app-market-prices',
@@ -75,8 +76,8 @@ export class MarketPricesComponent implements OnInit {
           .filter(date => date !== null);
   
         // Log to check if data is correct
-        console.log('Updated Synthetic Prices Options:', this.sdOptions);
-        console.log('Updated Final Prices Options:', this.fdOptions);
+        // console.log('Updated Synthetic Prices Options:', this.sdOptions);
+        // console.log('Updated Final Prices Options:', this.fdOptions);
       });
     }
   }
